@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('./font/norse-bold.woff2') format('woff2'),
+         url('./font/norse-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(251, 253, 255);
+}
+
+main{
+    display: flex;
+    height: 100vh;
+}
+
+#hide{
+    display: none;
+}
+
+.img-left{
+    width: 40%;
+    height: 100%;
+    background-image: url("./halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    color:  white;
+}
+
+.bg-logo{
+    height: 130px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 48%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'norsebold', sans-serif;
+    font-size: 2.6em;
+}
+
+.bg-logo img{
+    height: 100px;
+}
+
+.img-left p{
+    margin-bottom: 20px;
+}
+
+.login-part{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.login-top{
+    font-size: x-large;
+    margin: 40px;
+}
+
+.title-form{
+    font-size: 1.5em;
+    margin: 40px;
+}
+
+.login-mid{
+    box-shadow: 0px 6px 10px rgba(148, 148, 148, 0.61);
+    background-color: white;
+}
+
+.login-mid form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 40px;
+    max-width: 40%;
+}
+.login-mid form input{
+    display: flex;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+}
+
+.login-mid form input:focus{
+    border: 1px solid #2667e7;
+}
+
+.login-mid form input:valid{
+    border: 1px solid green;
+}
+.login-mid form input:invalid{
+    border: 1px solid rgb(255, 0, 0);
+}
+
+
+.login-mid form .input label{
+    font-size: 0.8em;
+}
+
+.create-account-btn button{
+    margin: 40px;
+    margin-top: -5px;
+    background-color: #596D48;
+    color: white;
+    font-size: .9em;
+    height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 1px 5px black ;
+}
+
+.create-account-btn button:hover{
+    box-shadow: none;
+}
+.create-account-btn button:active{
+    background-color: #49583b;
+}
+
+.alr-login{
+    margin-left: 40px;
+}
+
+.alr-login a{
+    text-decoration: none;
+    color: #596D48;
+}
+
+.alr-login a:hover{
+    text-decoration: none;
+    color: #20271a;
+}
